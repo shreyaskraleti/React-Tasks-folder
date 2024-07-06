@@ -95,27 +95,33 @@ function Loginform() {
                     <div className="form-group">
                         <label>Gender</label>
                         <div className="gender-options">
-                            <input
+                            <label>
+                                <input
                                 type="radio"
                                 name="gender"
                                 value="female"
                                 checked={formData.gender === 'female'}
                                 onChange={handleChange}
                             /> Female
-                            <input
+                            </label>
+                            <label>
+                                <input
                                 type="radio"
                                 name="gender"
                                 value="male"
                                 checked={formData.gender === 'male'}
                                 onChange={handleChange}
                             /> Male
-                            <input
+                            </label>
+                            <label>
+                                <input
                                 type="radio"
                                 name="gender"
                                 value="custom"
                                 checked={formData.gender === 'custom'}
                                 onChange={handleChange}
                             /> Custom
+                            </label>
                         </div>
                     </div>
                     
