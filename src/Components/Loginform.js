@@ -30,8 +30,8 @@ function Loginform() {
         
                <form className="Loginform" onSubmit={handleSubmit} >
         
-               <h1>Create a new account</h1> 
-               <h4>It's quick and easy.</h4>
+               <h2>Create a new account</h2> 
+               <p className="sent">It's quick and easy.</p>
         
                <div className="form-group">
                         <input
@@ -66,7 +66,8 @@ function Loginform() {
             />
                </div>
         
-               <div className="form-group">
+               <div className="form-group name-group">
+               <div className="name-field">
                         <input
                             type="text"
                             name="firstName"
@@ -77,7 +78,7 @@ function Loginform() {
                         />
                     </div>
         
-                    <div className="form-group">
+                    <div className="name-field">
                         <input
                             type="text"
                             name="surname"
@@ -87,39 +88,45 @@ function Loginform() {
                             required
                         />
                     </div>
-        
-                    <div className="form-group">
-                        <label>Gender:</label>
-                        <div className="gender-options">
-                            <label>
-                                <input
-                                type="radio"
-                                name="gender"
-                                value="female"
-                                checked={formData.gender === 'female'}
-                                onChange={handleChange}
-                            /> Female
-                            </label>
-                            <label>
-                                <input
-                                type="radio"
-                                name="gender"
-                                value="male"
-                                checked={formData.gender === 'male'}
-                                onChange={handleChange}
-                            /> Male
-                            </label>
-                            <label>
-                                <input
-                                type="radio"
-                                name="gender"
-                                value="custom"
-                                checked={formData.gender === 'custom'}
-                                onChange={handleChange}
-                            /> Custom
-                            </label>
-                        </div>
                     </div>
+
+                    <div className="form-group">
+    <label>Gender:</label>
+    <div className="gender-options">
+        <label>Female
+            <input
+                type="radio"
+                name="gender"
+                value="female"
+                checked={formData.gender === 'female'}
+                onChange={handleChange}
+            />
+        </label>
+        <label>Male
+            <input
+                type="radio"
+                name="gender"
+                value="male"
+                checked={formData.gender === 'male'}
+                onChange={handleChange}
+            />
+        </label>
+        <label>Custom
+            <input
+                type="radio"
+                name="gender"
+                value="custom"
+                checked={formData.gender === 'custom'}
+                onChange={handleChange}
+            />
+        </label>
+    </div>
+</div>
+
+        
+                    
+                        
+                    
                     <p className="Para-1">People who use our service may have uploaded your contact information to Achievers it. Learn more.</p>
                     <p className="Para-2">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
                     

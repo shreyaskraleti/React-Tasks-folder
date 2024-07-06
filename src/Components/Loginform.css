@@ -30,14 +30,38 @@
     border-radius: 5px;
 }
 
+.Loginform .name-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Loginform .name-field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.Loginform .name-field:last-child {
+    margin-right: 0;
+}
+
 .Loginform .gender-options input[type="radio"] {
+    margin-left: 40px;
     margin-right: 10px;
 }
 
 .Loginform .gender-options {
     display: flex;
     justify-content: space-around;
-    margin-top: 5px;
+    margin: 5px;
+   
+    
+}
+
+.Loginform .gender-options label {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 20px;
 }
 
 .Loginform .submit-button {
@@ -71,4 +95,24 @@ p{
 
 label {
     display: flex;
+    font-size: 12px;
+    color: black;
+}
+
+.Loginform .form-group label {
+    color: grey;
+}
+
+.Loginform .gender-options label {
+    color: black;
+    font-size: 20px;
+}
+
+h4 {
+    color: grey;
+    
+}
+
+.sent {
+    color: black;
 }
