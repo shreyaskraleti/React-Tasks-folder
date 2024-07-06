@@ -105,14 +105,16 @@ function Loginform() {
                             <input
                                 type="radio"
                                 name="gender"
-                                // value="male"
-                                // onChange={handleChange}
+                                value="male"
+                                checked={formData.gender === 'male'}
+                                onChange={handleChange}
                             /> Male
                             <input
                                 type="radio"
                                 name="gender"
-                                // value="custom"
-                                // onChange={handleChange}
+                                value="custom"
+                                checked={formData.gender === 'custom'}
+                                onChange={handleChange}
                             /> Custom
                         </div>
                     </div>
