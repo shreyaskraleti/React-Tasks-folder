@@ -1,12 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Loginform.css";
 
 function Loginform() {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: '',
+        dateOfBirth: '',
+        firstName: '',
+        surname: '',
+        gender: '',
+    })
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form data submitted:' formData);
+    }
+
         return (
             <>
                
         
-               <form className="Loginform" >
+               <form className="Loginform" onSubmit={handleSubmit} >
         
                <h1>Create a new account</h1> 
                <h4>It's quick and easy.</h4>
@@ -17,8 +39,8 @@ function Loginform() {
                             type="email"
                             name="email"
                             placeholder="Mobile number or email address"
-                            // value={formData.email}
-                            // onChange={}
+                            value={formData.email}
+                            onChange={handleChange}
                             required
                         />
                     </div>
@@ -29,8 +51,8 @@ function Loginform() {
                             type="password"
                             name="password"
                             placeholder="New password"
-                            // value={formData.password}
-                            // onChange={handleChange}
+                            value={formData.password}
+                            onChange={handleChange}
                             required
                         />
                     </div>
@@ -40,8 +62,8 @@ function Loginform() {
             <input
                 type="date"
                 name="dateOfBirth"
-                // value={formData.dateOfBirth}
-                // onChange={handleChange}
+                value={formData.dateOfBirth}
+                onChange={handleChange}
                 required
             />
                </div>
@@ -52,8 +74,8 @@ function Loginform() {
                             type="text"
                             name="firstName"
                             placeholder="First name"
-                            // value={formData.firstName}
-                            // onChange={handleChange}
+                            value={formData.firstName}
+                            onChange={handleChange}
                             required
                         />
                     </div>
@@ -64,8 +86,8 @@ function Loginform() {
                             type="text"
                             name="surname"
                             placeholder="Surname"
-                            // value={formData.surname}
-                            // onChange={handleChange}
+                            value={formData.surname}
+                            onChange={handleChange}
                             required
                         />
                     </div>
@@ -76,8 +98,9 @@ function Loginform() {
                             <input
                                 type="radio"
                                 name="gender"
-                                // value="female"
-                                // onChange={handleChange}
+                                value="female"
+                                checked={formData.gender === 'female'}
+                                onChange={handleChange}
                             /> Female
                             <input
                                 type="radio"
