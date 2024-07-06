@@ -23,7 +23,7 @@
 .Loginform input[type="password"],
 .Loginform input[type="date"],
 .Loginform select {
-    width: 60%;
+    width: 90%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -41,7 +41,7 @@
 }
 
 .Loginform .submit-button {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -50,18 +50,25 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
+    margin: 10px;
 }
 
 .Loginform .submit-button:hover {
     background-color: darkgreen;
 }
 
-.Loginform a {
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
+
+.Para-1, .Para-2{
+    display: block;
+    font-size: 12px;
+    color: grey;
 }
 
-.Loginform a:hover {
-    text-decoration:underline;
+p{
+    color: blue;
+    margin: 10px;
+}
+
+label {
+    display: flex;
 }

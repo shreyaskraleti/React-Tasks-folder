@@ -34,7 +34,6 @@ function Loginform() {
                <h4>It's quick and easy.</h4>
         
                <div className="form-group">
-               <label>Email: </label>
                         <input
                             type="email"
                             name="email"
@@ -46,7 +45,6 @@ function Loginform() {
                     </div>
         
                     <div className="form-group">
-                    <label>Password: </label>
                         <input
                             type="password"
                             name="password"
@@ -69,7 +67,6 @@ function Loginform() {
                </div>
         
                <div className="form-group">
-               <label>FirstName:  </label>
                         <input
                             type="text"
                             name="firstName"
@@ -81,7 +78,6 @@ function Loginform() {
                     </div>
         
                     <div className="form-group">
-                    <label>LastName:  </label>
                         <input
                             type="text"
                             name="surname"
@@ -93,7 +89,7 @@ function Loginform() {
                     </div>
         
                     <div className="form-group">
-                        <label>Gender</label>
+                        <label>Gender:</label>
                         <div className="gender-options">
                             <label>
                                 <input
@@ -124,9 +120,11 @@ function Loginform() {
                             </label>
                         </div>
                     </div>
+                    <p className="Para-1">People who use our service may have uploaded your contact information to Achievers it. Learn more.</p>
+                    <p className="Para-2">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
                     
                     <button type="submit" className="submit-button">Sign Up</button>
-                    <p>Already have an account? <a href="www.google.com">Login</a></p>
+                    <p>Already have an account?</p>
                     
                     </form>
                     </>
