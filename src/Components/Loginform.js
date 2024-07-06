@@ -21,7 +21,7 @@ function Loginform() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form data submitted:' formData);
+        console.log('Form data submitted:', formData);
     }
 
         return (
@@ -120,7 +120,7 @@ function Loginform() {
                     </div>
                     
                     <button type="submit" className="submit-button">Sign Up</button>
-                    <p>Already have an account? <a href="https://mail.google.com/mail/u/0/#inbox">Login</a></p>
+                    <p>Already have an account? <a href="www.google.com">Login</a></p>
                     
                     </form>
                     </>
