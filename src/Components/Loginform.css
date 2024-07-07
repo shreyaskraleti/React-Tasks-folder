@@ -16,6 +16,7 @@
 
 .Loginform .form-group {
     margin-bottom: 15px;
+    position: relative;
 }
 
 .Loginform input[type="text"],
@@ -74,7 +75,7 @@
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .Loginform .submit-button:hover {
@@ -115,4 +116,24 @@ h4 {
 
 .sent {
     color: black;
+}
+
+.Loginform input.error {
+    border-color: red;
+}
+
+
+.error-symbol {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gender-options input[type="radio"].error + .error-symbol {
+    margin-left: 0;
 }
